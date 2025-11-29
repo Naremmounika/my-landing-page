@@ -1,0 +1,639 @@
+@import url('https://fonts.googleapis.com/css2?family=Bree+Serif&family=Caveat:wght@400;700&family=Lobster&family=Monoton&family=Open+Sans:ital,wght@0,400;0,700;1,400;1,700&family=Playfair+Display+SC:ital,wght@0,400;0,700;1,700&family=Playfair+Display:ital,wght@0,400;0,700;1,700&family=Roboto:ital,wght@0,400;0,700;1,400;1,700&family=Source+Sans+Pro:ital,wght@0,400;0,700;1,700&family=Work+Sans:ital,wght@0,400;0,700;1,700&display=swap');
+
+body {
+    margin: 0px;
+}
+
+.top-container {
+    background-color: #ffffff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+.time {
+    font-weight: 600;
+    color: #000000;
+
+}
+
+.icons {
+    width: 72px;
+    height: 20px;
+}
+
+@media screen and (min-height:768px) {
+    .top-container {
+        display: none;
+    }
+}
+
+.outer-container {
+    min-height: 100vh;
+    background-color: #ffffff;
+
+}
+
+.nav-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    background-color: #FFFAF5;
+    padding: 10px;
+}
+
+.logo {
+    width: 100px;
+    height: 40px;
+}
+
+@media screen and (min-width:768px) {
+    .logo {
+        margin-left: 20px;
+    }
+}
+
+@media screen and (min-width:768px) {
+    .logo {
+        width: 130px;
+        height: 50px;
+    }
+}
+
+.nav-items {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.bookappointment {
+    display: none;
+}
+
+@media screen and (min-width:768px) {
+    .bookappointment {
+        width: 200px;
+        height: 30px;
+        margin-right: 20px;
+        opacity: 1;
+        border-radius: 50px;
+        gap: 12px;
+        border-width: 1px;
+        padding-top: 8px;
+        padding-right: 12px;
+        padding-bottom: 8px;
+        padding-left: 12px;
+        background-color: #F8943F;
+        border-color: #DE6F0D;
+        flex-shrink: 0;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+    }
+
+    .appointment-logo {
+        width: 30px;
+        height: 30px;
+    }
+
+    .appointment {
+        font-family: Figtree;
+        font-weight: 600;
+        font-style: normal;
+        font-size: 18px;
+        line-height: 100%;
+        color: #ffffff;
+
+    }
+}
+
+.phone-container {
+    width: 120px;
+    height: 15px;
+
+    display: flex;
+    flex-direction: row;
+    opacity: 1;
+    border-radius: 70px;
+    gap: 12px;
+    border: 1px solid #462512;
+    padding-top: 8px;
+    padding-right: 10px;
+    padding-bottom: 8px;
+    padding-left: 10px;
+    background-color: #ffffff;
+    margin-right: 5px;
+    align-items: center;
+
+}
+
+@media screen and (min-width:768px) {
+    .phone-container {
+        width: 150px;
+        height: 35px;
+        border-radius: 50px;
+        border-width: 1px;
+        padding-top: 8px;
+        padding-right: 12px;
+        padding-bottom: 8px;
+        padding-left: 12px;
+    }
+}
+
+.phone-icon {
+    width: 16px;
+    height: 25px;
+    color: #4D2C19;
+    opacity: 1;
+
+}
+
+.phone-num {
+    font-family: Figtree;
+    font-weight: 600;
+    color: #1A1A1A;
+    font-size: 16px;
+    line-height: 100%;
+    letter-spacing: 0%;
+
+}
+
+@media screen and (min-width:768px) {
+    .phone-num {
+        font-size: 20px;
+    }
+}
+
+.hero-section {
+    display: flex;
+    flex-direction: column;
+
+}
+
+.doctor-image-cont {
+    background-image: url("https://res.cloudinary.com/degqeymai/image/upload/v1764408849/empty-stomatology-orthodontist-bright-office-room-with-nobody-it_1_wkuh4o.png");
+    background-size: cover;
+    max-width: 768px;
+    min-height: 395px;
+    display: flex;
+    flex-direction: column;
+}
+
+.sponsered-cont {
+    width: 210px;
+    height: 40px;
+    padding-top: 9.94px;
+    padding-right: 19.88px;
+    padding-bottom: 9.94px;
+    padding-left: 19.88px;
+    border-bottom-left-radius: 12px;
+    background-color: #FFFFFF80;
+    align-self: flex-end;
+}
+
+@media screen and (min-width:768px) {
+    .sponsered-cont {
+        display: none;
+    }
+}
+
+.doctor-cont {
+    width: 390px;
+    height: 205px;
+    top: 66px;
+    gap: 24px;
+    angle: 0 deg;
+    opacity: 1;
+    padding-top: 20px;
+    padding-right: 16px;
+    padding-bottom: 20px;
+    padding-left: 16px;
+
+    display: flex;
+    flex-direction: row;
+
+    align-items: flex-start;
+}
+
+.doctor {
+    width: 200px;
+    height: 200px;
+
+    opacity: 1;
+    background-color: transparent;
+    justify-content: flex-end;
+    align-self: flex-end;
+
+}
+
+.doctor-para {
+    font-family: Figtree;
+    font-weight: bold;
+    font-size: 20px;
+
+
+}
+
+.para {
+    background-color: #FFFFFF80;
+    background-size: cover;
+    max-width: 768px;
+    height: 120px;
+}
+
+.span-elem {
+    font-family: Figtree;
+    font-weight: 800;
+    font-size: 16px;
+    color: #F8943F;
+    margin-left: 0px;
+
+}
+
+.doctor-para2 {
+    font-family: Figtree;
+    font-weight: 600;
+    font-size: 16px;
+    color: #525252;
+
+}
+
+.img1 {
+    width: 52.18935012817383px;
+    height: 23.360946655273438px;
+
+
+}
+
+.img2 {
+    width: 64.61538696289062px;
+    height: 14.165680885314941px;
+
+
+}
+
+.img3 {
+    width: 41.005916595458984px;
+    height: 26.094675064086914px;
+
+
+}
+
+.form-container {
+    background-color: #FFF9F4;
+    border-radius: 20px;
+}
+
+.form-heading {
+    font-family: Figtree;
+    font-weight: 700;
+    font-style: Bold;
+    font-size: 20px;
+    leading-trim: NONE;
+    line-height: 130%;
+    letter-spacing: 0%;
+    text-align: center;
+    color: #303030;
+}
+
+.form-para {
+    font-family: Figtree;
+    font-weight: 400;
+    font-style: Regular;
+    font-size: 16px;
+    leading-trim: NONE;
+    line-height: 130%;
+    letter-spacing: 0%;
+    text-align: center;
+    color: #474747;
+}
+
+.name {
+    border: 1px solid #FFE0C4;
+    border-radius: 15px;
+    padding-left: 15px;
+    padding-right: 25px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    margin-top: 10px;
+    background-color: #ffffff;
+}
+
+.captcha {
+
+    display: flex;
+}
+
+.form-align {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.cap {
+    padding-left: 10px;
+    height: 38px;
+    padding-right: 10px;
+    border: 1px solid #FFE0C4;
+
+    margin-top: 10px;
+    border-top-left-radius: 24px;
+    border-bottom-left-radius: 24px;
+    align-self: center;
+
+}
+
+.captcha-num {
+
+    width: 110;
+    height: 38;
+    gap: 10px;
+    angle: 0 deg;
+    opacity: 1;
+    padding-top: 17px;
+    padding-left: 15px;
+    align-self: center;
+    padding-right: 25px;
+    border-top-right-radius: 24px;
+    border-bottom-right-radius: 24px;
+    background-color: #462512;
+    color: #ffffff;
+    margin-bottom: 10px;
+}
+
+.checkbox {
+    display: flex;
+}
+
+.checkbox-in {
+    margin-bottom: 25px;
+    margin-right: 5px;
+}
+
+.btn {
+    padding-top: 14px;
+    padding-right: 16px;
+    padding-bottom: 14px;
+    padding-left: 16px;
+    border-radius: 24px;
+    background-color: #F58420;
+    color: #ffffff;
+    border-width: 0px;
+    margin-bottom: 25px;
+}
+
+.rootcanal {
+    background-color: #ffffff;
+}
+
+.rootcanal-head {
+    font-family: Figtree;
+    font-weight: 700;
+
+    font-size: 24px;
+
+    line-height: 130%;
+    text-align: center;
+
+}
+
+.rootcanal-para {
+    font-family: Figtree;
+    font-weight: 400;
+    font-style: Regular;
+    font-size: 20px;
+    leading-trim: NONE;
+    line-height: 130%;
+    letter-spacing: 0%;
+    text-align: center;
+    color: #474747;
+}
+
+.List-cont {
+    display: flex;
+    margin: 20px;
+}
+
+.img-list {
+    width: 320px;
+    height: 332px;
+    angle: 0 deg;
+    opacity: 1;
+
+}
+
+.list-head {
+    font-family: Figtree;
+    font-weight: 700;
+    font-style: Bold;
+    font-size: 20px;
+    leading-trim: NONE;
+    line-height: 100%;
+    letter-spacing: 0%;
+
+}
+
+.list-para {
+    font-family: Figtree;
+    font-weight: 400;
+    font-style: Regular;
+    font-size: 16px;
+    leading-trim: NONE;
+    line-height: 130%;
+    letter-spacing: 0%;
+    color: #474747;
+}
+
+.unorder-list {
+    font-family: Figtree;
+    font-weight: 700;
+    font-style: Bold;
+    font-size: 16px;
+    leading-trim: NONE;
+    line-height: 100%;
+    letter-spacing: 0%;
+
+}
+
+.list-item {
+    font-family: Figtree;
+    font-weight: 400;
+    font-style: Regular;
+    font-size: 16px;
+    leading-trim: NONE;
+    line-height: 130%;
+    letter-spacing: 0%;
+
+}
+
+.start-para {
+    font-family: Figtree;
+    font-weight: 600;
+    font-style: SemiBold;
+    font-size: 14px;
+    leading-trim: NONE;
+    line-height: 130%;
+    letter-spacing: 0%;
+    color: #F58420;
+}
+
+.amount {
+    font-family: Figtree;
+    font-weight: 700;
+    font-style: Bold;
+    font-size: 20px;
+    leading-trim: NONE;
+    line-height: 100%;
+    letter-spacing: 0%;
+    color: #1A1A1A;
+}
+
+.cons-btn {
+    padding-top: 8px;
+    padding-right: 20px;
+    padding-bottom: 8px;
+    padding-left: 20px;
+    border-radius: 50px;
+    background-color: #F58420;
+    border-width: 0px;
+    color: #ffffff;
+}
+
+.img-cont {
+    display: flex;
+    flex-direction: row;
+}
+
+.smiles-head {
+    font-family: Figtree;
+    font-weight: 700;
+    font-style: Bold;
+    font-size: 24px;
+    leading-trim: NONE;
+    line-height: 130%;
+    letter-spacing: 0%;
+    color: #1A1A1A;
+    text-align: center;
+}
+
+.smiles-para {
+    font-family: Figtree;
+    font-weight: 400;
+    font-style: Regular;
+    font-size: 20px;
+    leading-trim: NONE;
+    line-height: 130%;
+    letter-spacing: 0%;
+    text-align: center;
+    color: #474747;
+}
+
+.smiles-outer {
+    display: flex;
+    flex-direction: row;
+
+}
+
+.single-smile {
+    display: flex;
+    flex-direction: column;
+    margin: 20px;
+}
+
+.heads {
+    display: flex;
+    justify-content: space-between;
+}
+
+.smiles {
+    width: 295;
+    height: 200;
+    angle: 0 deg;
+    opacity: 1;
+    border-radius: 20px;
+
+}
+
+.smiles-name {
+    font-family: Figtree;
+    font-weight: 600;
+    font-style: SemiBold;
+    font-size: 16px;
+    leading-trim: NONE;
+    line-height: 100%;
+    letter-spacing: 0%;
+
+}
+
+.smile-na {
+    font-family: Figtree;
+    font-weight: 600;
+    font-style: SemiBold;
+    font-size: 14px;
+    leading-trim: NONE;
+    line-height: 100%;
+    letter-spacing: 0%;
+    color: #F58420;
+}
+
+.choose-head {
+    font-family: Figtree;
+    font-weight: 700;
+    font-style: Bold;
+    font-size: 24px;
+    leading-trim: NONE;
+    line-height: 100%;
+    letter-spacing: 0%;
+    color: #303030;
+    text-align: center;
+}
+
+.choose-para {
+    font-family: Figtree;
+    font-weight: 400;
+    font-style: Regular;
+    font-size: 20px;
+    leading-trim: NONE;
+    line-height: 130%;
+    letter-spacing: 0%;
+    text-align: center;
+    color: #474747;
+}
+
+.unlist {
+    list-style-type: none;
+}
+
+.chooseus {
+    font-family: Figtree;
+    font-weight: 600;
+    font-style: SemiBold;
+    font-size: 16px;
+    leading-trim: CAP_HEIGHT;
+    line-height: 100%;
+    letter-spacing: 0%;
+    color: #1A1A1A;
+    margin-top: 40px;
+}
+
+.choose-container {
+    display: flex;
+    justify-content: space-between;
+}
+
+.chooseu {
+    display: flex;
+    justify-content: space-between;
+
+}
+
+.choose-img {
+    width: 461;
+    height: 422;
+    angle: 0 deg;
+    opacity: 1;
+    border-radius: 20px;
+
+}
