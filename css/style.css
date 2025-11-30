@@ -13,6 +13,13 @@ body {
     padding-right: 10px;
 }
 
+@media screen and (min-height:768px) {
+    .top-container {
+        display: none;
+    }
+}
+
+
 .time {
     font-weight: 600;
     color: #000000;
@@ -24,12 +31,6 @@ body {
     height: 20px;
 }
 
-@media screen and (min-height:768px) {
-    .top-container {
-        display: none;
-    }
-}
-
 .outer-container {
     min-height: 100vh;
     background-color: #ffffff;
@@ -39,8 +40,9 @@ body {
 .nav-container {
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
+
     background-color: #FFFAF5;
+    background-size: cover;
     padding: 10px;
 }
 
@@ -51,14 +53,9 @@ body {
 
 @media screen and (min-width:768px) {
     .logo {
-        margin-left: 20px;
-    }
-}
-
-@media screen and (min-width:768px) {
-    .logo {
         width: 130px;
         height: 50px;
+        margin-left: 20px;
     }
 }
 
@@ -66,6 +63,7 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
+    margin-left: auto;
 }
 
 .bookappointment {
@@ -80,13 +78,12 @@ body {
         opacity: 1;
         border-radius: 50px;
         gap: 12px;
-        border-width: 1px;
         padding-top: 8px;
         padding-right: 12px;
         padding-bottom: 8px;
         padding-left: 12px;
         background-color: #F8943F;
-        border-color: #DE6F0D;
+        border: 1px solid #DE6F0D;
         flex-shrink: 0;
         display: flex;
         flex-direction: row;
@@ -132,13 +129,13 @@ body {
 @media screen and (min-width:768px) {
     .phone-container {
         width: 150px;
-        height: 35px;
+        height: 25px;
         border-radius: 50px;
-        border-width: 1px;
         padding-top: 8px;
         padding-right: 12px;
         padding-bottom: 8px;
         padding-left: 12px;
+        border: 1px solid #462512;
     }
 }
 
@@ -169,7 +166,20 @@ body {
 .hero-section {
     display: flex;
     flex-direction: column;
+    width: 100%;
 
+}
+
+.head-form-cont {
+    display: flex;
+    flex-direction: column;
+}
+
+@media screen and (min-width:768px) {
+    .head-form-cont {
+        display: flex;
+        flex-direction: row;
+    }
 }
 
 .doctor-image-cont {
@@ -200,28 +210,17 @@ body {
 }
 
 .doctor-cont {
-    width: 390px;
-    height: 205px;
-    top: 66px;
-    gap: 24px;
-    angle: 0 deg;
-    opacity: 1;
     padding-top: 20px;
-    padding-right: 16px;
-    padding-bottom: 20px;
-    padding-left: 16px;
-
     display: flex;
     flex-direction: row;
-
+    justify-content: space-between;
     align-items: flex-start;
+    flex-shrink: 0;
 }
 
 .doctor {
     width: 200px;
-    height: 200px;
-
-    opacity: 1;
+    height: 400px;
     background-color: transparent;
     justify-content: flex-end;
     align-self: flex-end;
@@ -239,8 +238,11 @@ body {
 .para {
     background-color: #FFFFFF80;
     background-size: cover;
-    max-width: 768px;
-    height: 120px;
+    width: 450px;
+    height: 205px;
+    padding-left: 20px;
+    padding-bottom: 20px;
+
 }
 
 .span-elem {
@@ -271,6 +273,17 @@ body {
     width: 64.61538696289062px;
     height: 14.165680885314941px;
 
+
+}
+
+.bookappointmentbtn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50px;
+    background-color: #F8943F;
+    color: #ffffff;
+    border: 1px solid #DE6F0D;
 
 }
 
@@ -347,12 +360,9 @@ body {
 
 .captcha-num {
 
-    width: 110;
-    height: 38;
-    gap: 10px;
-    angle: 0 deg;
-    opacity: 1;
-    padding-top: 17px;
+    width: 25px;
+    height: 22px;
+    padding-top: 10px;
     padding-left: 15px;
     align-self: center;
     padding-right: 25px;
@@ -360,7 +370,7 @@ body {
     border-bottom-right-radius: 24px;
     background-color: #462512;
     color: #ffffff;
-    margin-bottom: 10px;
+    margin-bottom: 5px;
 }
 
 .checkbox {
@@ -413,15 +423,37 @@ body {
 
 .List-cont {
     display: flex;
+    flex-direction: column;
     margin: 20px;
+    width: 50%;
+}
+
+@media screen and (min-width:768px) {
+    .List-cont {
+        display: flex;
+        flex-direction: row;
+    }
 }
 
 .img-list {
-    width: 320px;
-    height: 332px;
-    angle: 0 deg;
-    opacity: 1;
+    width: 280px;
+    height: 280px;
+}
 
+@media screen and (min-width:768px) {
+    .img-list {
+        width: 320px;
+        height: 332px;
+
+    }
+}
+
+.style-list {
+    border: 5px solid #FFF9F4;
+    border-bottom-left-radius: 30px;
+    border-bottom-right-radius: 30px;
+    padding-left: 10px;
+    padding-bottom: 10px;
 }
 
 .list-head {
@@ -550,8 +582,6 @@ body {
 .smiles {
     width: 295;
     height: 200;
-    angle: 0 deg;
-    opacity: 1;
     border-radius: 20px;
 
 }
@@ -559,22 +589,13 @@ body {
 .smiles-name {
     font-family: Figtree;
     font-weight: 600;
-    font-style: SemiBold;
     font-size: 16px;
-    leading-trim: NONE;
-    line-height: 100%;
-    letter-spacing: 0%;
-
 }
 
 .smile-na {
     font-family: Figtree;
     font-weight: 600;
-    font-style: SemiBold;
     font-size: 14px;
-    leading-trim: NONE;
-    line-height: 100%;
-    letter-spacing: 0%;
     color: #F58420;
 }
 
@@ -604,36 +625,174 @@ body {
 
 .unlist {
     list-style-type: none;
+    order: 3;
+}
+
+@media screen and (min-width:768px) {
+    .unlist {
+        order: 0;
+    }
 }
 
 .chooseus {
     font-family: Figtree;
     font-weight: 600;
-    font-style: SemiBold;
     font-size: 16px;
-    leading-trim: CAP_HEIGHT;
-    line-height: 100%;
-    letter-spacing: 0%;
     color: #1A1A1A;
-    margin-top: 40px;
+    align-self: center;
 }
 
 .choose-container {
     display: flex;
-    justify-content: space-between;
+    flex-direction: column;
+
+}
+
+@media screen and (min-width:768px) {
+    .choose-container {
+        display: flex;
+        flex-direction: row;
+    }
 }
 
 .chooseu {
     display: flex;
-    justify-content: space-between;
 
 }
 
-.choose-img {
-    width: 461;
-    height: 422;
-    angle: 0 deg;
-    opacity: 1;
-    border-radius: 20px;
+.choose-plus {
+    color: #EA7D28;
+    font-size: 20px;
+    font-weight: bold;
+    height: 20px;
+    margin-left: auto;
+    margin-right: 20px;
+    align-self: center;
+}
 
+.choose-img {
+    width: 90%;
+    height: 30%;
+    margin-left: 20px;
+    border-radius: 20px;
+    order: 0;
+
+}
+
+@media screen and (min-width:768px) {
+    .choose-img {
+        width: 50%;
+        order: 1;
+        align-self: flex-end;
+    }
+}
+
+.patients-review {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+.review-head {
+    font-family: Figtree;
+    font-weight: 700;
+    font-style: Bold;
+    font-size: 24px;
+    color: #303030;
+}
+
+.review-para {
+    font-family: Figtree;
+    font-weight: 400;
+    font-size: 20px;
+}
+
+.review-cont {
+    display: flex;
+    flex-direction: row;
+    margin: 10px;
+}
+
+.each-review-cont {
+    display: flex;
+    flex-direction: column;
+}
+
+.each-review {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.reviewer-img {
+    width: 180px;
+    height: 300px;
+    border-radius: 10px;
+
+}
+
+.review-text {
+    font-family: Figtree;
+    font-weight: 600;
+
+    font-size: 16px;
+
+}
+
+.review {
+    font-family: Figtree;
+    font-weight: 600;
+    font-style: SemiBold;
+    font-size: 16px;
+    color: #F58420;
+
+}
+
+.reviewers {
+    display: flex;
+    flex-direction: row;
+}
+
+.footer {
+    background-color: #462512;
+    background-size: cover;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 20px;
+}
+
+.footer-logo {
+    width: 154px;
+    height: 60px;
+}
+
+.foot-name {
+    font-family: Figtree;
+    font-weight: 400;
+    font-style: Regular;
+    font-size: 10px;
+    margin-right: 7px;
+}
+
+.foot-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    color: #FFFFFF;
+}
+
+.hr-line {
+    color: #FFFFFF;
+    width: 100%;
+}
+
+.copy-right {
+    font-family: Figtree;
+    font-weight: 400;
+    font-style: Regular;
+    font-size: 10px;
+
+    text-align: center;
+    color: #ffffff;
 }
